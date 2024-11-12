@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Mathematics, Indiana University - Bloomington, May 2025 (expected)
+* M.S. in Mathematics, Indiana University - Bloomington, 2021
+* B.S. in Mathematics, The University of Arizona, 2018
 
 Work experience
 ======
