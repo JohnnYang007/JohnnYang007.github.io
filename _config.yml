@@ -21,7 +21,7 @@ repository               : "JohnnYang007.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "self.jpeg"
   name             : "Johnny Yang"
   pronouns         : # example: "she/her"  
   bio              : "Phd student at Indiana University Bloomington"
