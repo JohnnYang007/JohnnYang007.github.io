@@ -6,15 +6,14 @@ author_profile: true
 ---
 
 # Research Interests
-I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations, interacting particle systems, stochastic quantizations and stochastic modeling in biological systems.
+I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations (SPDEs), interacting particle systems, stochastic quantizations and stochastic modeling in biological systems.
 
-<! --
-# Collaborators
-* [Louis (Wai-Tong)](https://sites.google.com/site/louisfanmath/home) Fan (Indiana University-Bloomington).
-* [Zhenyao Sun](https://zhenyao-sun.github.io/) (Beijing Institute of Technology).
-* [Adrian Gonzalez Casanova](https://search.asu.edu/profile/5115356) (Arizona State University).
-* [John Yin](https://yinlab.discovery.wisc.edu/john-yin/) (University of Wisconsin-Madison)
--->
+
+[# Collaborators]: #
+[* [Louis (Wai-Tong)](https://sites.google.com/site/louisfanmath/home) Fan (Indiana University-Bloomington).]: #
+[* [Zhenyao Sun](https://zhenyao-sun.github.io/) (Beijing Institute of Technology).]: #
+[* [Adrian Gonzalez Casanova](https://search.asu.edu/profile/5115356) (Arizona State University).]: #
+[* [John Yin](https://yinlab.discovery.wisc.edu/john-yin/) (University of Wisconsin-Madison)]: #
 
 # Current Projects
 
