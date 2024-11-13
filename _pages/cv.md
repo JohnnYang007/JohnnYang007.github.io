@@ -9,13 +9,14 @@ redirect_from:
 
 {% include base_path %}
 You can download my CV by clicking [here](/files/CV.pdf).
+
 Education
 ======
 * Ph.D in Mathematics, Indiana University - Bloomington, May 2025 (expected)
   * Advisor: Prof. Louis (Wai-Tong) Fan
 * M.S. in Mathematics, Indiana University - Bloomington, 2021
 * B.S. in Mathematics, Magna Cum Laude, The University of Arizona, 2018
-* Minor in Finance
+  * Minor in Finance
 
 Research Interests
 ======
