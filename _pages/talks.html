@@ -1,16 +1,26 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks and Presentations"
 permalink: /talks/
 author_profile: true
 ---
 
 {% if site.talkmap_link == true %}
-
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
+<p style="text-decoration:underline;">
+  <a href="/talkmap.html">See a map of all the places I've given a talk!</a>
+</p>
 {% endif %}
 
+<h2>Talks</h2>
 {% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+  {% if post.category == "Talk" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
+{% endfor %}
+
+<h2>Posters</h2>
+{% for post in site.talks reversed %}
+  {% if post.category == "Poster" %}
+    {% include archive-single-talk.html %}
+  {% endif %}
 {% endfor %}
