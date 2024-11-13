@@ -5,18 +5,18 @@ permalink: /research/
 author_profile: true
 ---
 
-# Research Interests
+## Research Interests
 I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations (SPDEs), interacting particle systems, stochastic quantizations and stochastic modeling in biological systems.
 
 
 
-# Current Projects
+## Current Projects
 
-## Stochastic PDEs
+### Stochastic PDEs
 
 1. **SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun.
     * Click [Here] to see details.
-    
+
 2. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
     * Click [Here] to see details.
 
@@ -26,13 +26,13 @@ I am interested in probability theory and its applications to physics and biolog
 
 
 
-## Stochastic Modeling
+### Stochastic Modeling
 
 1. **Spatial stochastic modeling for virus-mutation interactions**, with Louis Fan and John Yin.
     * Click [Here] to see some interesting figures.
 
 
-# Published papers
+## Published papers
 
 1. [(Link)](https://www.aimspress.com/article/doi/10.3934/mbe.2023201) Constrained Langevin approximation for the Togashi-Kaneko model of autocatalytic reactions." Fan, Wai-Tong Louis, Yifan Johnny Yang, and Chaojie Yuan. Mathematical Biosciences and Engineering 20, no. 3 (2023): 4322-4352.
 

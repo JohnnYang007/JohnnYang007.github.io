@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 You can download my CV by clicking [here](/files/CV.pdf).
 
-### Education
+## Education
 
 * Ph.D in Mathematics, Indiana University - Bloomington, May 2025 (expected)
   * Advisor: Prof. Louis (Wai-Tong) Fan
@@ -18,12 +18,12 @@ You can download my CV by clicking [here](/files/CV.pdf).
 * B.S. in Mathematics, Magna Cum Laude, The University of Arizona, 2018
   * Minor in Finance
 
-### Research Interests
+## Research Interests
 
 Probability theory and its applications, stochastic analysis, stochastic partial differential equations, interacting particle
 systems, stochastic quantization, mathematical biology.
   
-### Honors and Awards
+## Honors and Awards
 
 * William P Ziemer Award, Indiana University Bloomington, 2024.
 * College of Arts and Sciences Fellowship, Indiana University Bloomington, 2020.
@@ -31,7 +31,7 @@ systems, stochastic quantization, mathematical biology.
 
 
 
-### Publications and Work in Progress
+## Publications and Work in Progress
 
 1. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2024.
 2. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2024+
@@ -39,7 +39,7 @@ systems, stochastic quantization, mathematical biology.
 4. Qiantong Liang, Johnny Yang, Wai-Tong Louis Fan, and Wing-Cheong Lo. Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles. PLOS Computational Biology, 19(10), 2023
 5. Wai-Tong Louis Fan, Yifan Johnny Yang, and Chaojie Yuan. Constrained langevin approximation for the togashikaneko model of autocatalytic reactions. Mathematical Biosciences and Engineering, 20(3):4322–4352, 2023
 
-### Other Research Activities
+## Other Research Activities
 
 * Collaboration with John Yin (University of Wisconsin - Madison) under National Science Foundation (NSF) funding DMS-2348164, Fall 2024 - present  
   * We aim to develop a spatial stochastic model for virus growth with mutations on two-dimensional domains.
@@ -54,16 +54,16 @@ Under the guidance of Prof. Tom Kennedy
   * Studied the behavior of site-avoiding random walks on the Manhattan lattice. Simulated trajectories of various self-avoiding random walks on two-dimensional lattices.
 
 
-### Presentations
+## Presentations
 
-#### Talks
+### Talks
 * Patch formation driven by stochastic effects, SIAM Conference on Mathematics of Data Science (MDS24), October 2024.
 
 * Stability of Markov Process and Foster-Lyapunov Type Criteria Demonstration via Togashi-Kaneko Model, Graduate Probability Seminar, Indiana University Bloomington, September 2023.
 
 * On Extinction Probability of Stochastic PDE on Metric Graphs, Graduate Student Probability Conference, University of Wisconsin–Madison, September 2022. 
 
-#### Poster Presentations
+### Poster Presentations
 * SPDE on metric measure spaces, Recent Progress in Stochastic Analysis and its Applications, Loyola University Chicago, July 2024.
 
 * On Extinction Probability of Stochastic PDE on Metric Graphs, Seminar on Stochastic Processes, University of Arizona, April 2023.
@@ -71,16 +71,16 @@ Under the guidance of Prof. Tom Kennedy
 * On Extinction Probability of Stochastic FKPP on Metric Graphs, Seminar on Stochastic Processes, Lehigh University, April 2022.
 
 
-### Professional Activities
+## Professional Activities
 * **Organizer**, Graduate Probability Seminar at Indiana University Bloomington,  Fall 2023 - Spring 2024
 
-### Teaching Experience
+## Teaching Experience
 
-#### Mentoring, Indiana University, Bloomington
+### Mentoring, Indiana University, Bloomington
 * Co-mentored an undergraduate woman for ”Emerging Scholars Research Experience for Undergraduate Women,” a year-long program at IU (August 2022 - May 2023).
 * Co-mentored an undergraduate student for the Summer REU at Indiana University Bloomington (Summer 2023).
 
-#### Recitation/Assisting, Indiana University, Bloomington
+### Recitation/Assisting, Indiana University, Bloomington
 * Math-M 106: The Mathematics of Decisions and Beauty (Fall 2023)
 * MATH–M 211: Calculus I (Spring 2022)
 * Math-M 106: The Mathematics of Decisions and Beauty (Fall 2021)
