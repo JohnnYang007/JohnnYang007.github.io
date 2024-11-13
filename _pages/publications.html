@@ -13,7 +13,7 @@ author_profile: true
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -23,14 +23,64 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+
+      <!-- Display the citation only if available; otherwise, handle different statuses -->
+      <div class="publication-item">
+        {% if post.citation %}
+          <p class="citation">{{ post.citation }}</p>
+        {% else %}
+          <p>
+            {% if post.category == "current" %}
+              In preparation
+            {% else %}
+              Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+            {% endif %}
+          </p>
+        {% endif %}
+
+        <!-- Display any additional links for the publication -->
+        {% if post.paperurl %}
+          <p><a href="{{ post.paperurl }}">Download Paper</a></p>
+        {% endif %}
+        {% if post.slidesurl %}
+          <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+        {% endif %}
+
+        <!-- Optionally include description or excerpt if needed -->
+        {% if post.excerpt %}
+          <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+        {% endif %}
+      </div>
     {% endfor %}
   {% endfor %}
 {% else %}
+  <!-- If no categories are defined, loop through all publications -->
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    <div class="publication-item">
+      {% if post.citation %}
+        <p class="citation">{{ post.citation }}</p>
+      {% else %}
+        <p>
+          {% if post.category == "current" %}
+            In preparation
+          {% else %}
+            Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}
+          {% endif %}
+        </p>
+      {% endif %}
+
+      {% if post.paperurl %}
+        <p><a href="{{ post.paperurl }}">Download Paper</a></p>
+      {% endif %}
+      {% if post.slidesurl %}
+        <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
+      {% endif %}
+
+      {% if post.excerpt %}
+        <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
+      {% endif %}
+    </div>
   {% endfor %}
 {% endif %}
-
 
 
