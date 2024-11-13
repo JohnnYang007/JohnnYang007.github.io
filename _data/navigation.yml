@@ -6,7 +6,7 @@
 
 main:
   - title: "Publications and Projects"
-    url: /publications/
+    url: /research/
 
 #  - title: "Talks"
 #    url: /talks/    
@@ -20,7 +20,7 @@ main:
   #- title: "Blog Posts"
   #  url: /year-archive/
     
-  - title: "CV"
+  - title: "Curriculum Vitae"
     url: /cv/
     
 #  - title: "Guide"

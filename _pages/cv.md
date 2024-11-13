@@ -33,7 +33,7 @@ systems, stochastic quantization, mathematical biology.
 
 ### Publications and Work in Progress
 
-1. \[In preparation\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2024.
+1. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2024.
 2. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2024+
 3. [In preparation] On extinction of solutions to stochastic partial differential equations on metric graphs. Louis Fan, Adri´an Gonz´alez Casanova, and Johnny Yang.  2024+
 4. Qiantong Liang, Johnny Yang, Wai-Tong Louis Fan, and Wing-Cheong Lo. Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles. PLOS Computational Biology, 19(10), 2023
@@ -54,7 +54,7 @@ Under the guidance of Prof. Tom Kennedy
   * Studied the behavior of site-avoiding random walks on the Manhattan lattice. Simulated trajectories of various self-avoiding random walks on two-dimensional lattices.
 
 
-### PRESENTATIONS
+### Presentations
 
 #### Talks
 * Patch formation driven by stochastic effects, SIAM Conference on Mathematics of Data Science (MDS24), October 2024.
@@ -69,12 +69,17 @@ Under the guidance of Prof. Tom Kennedy
 * On Extinction Probability of Stochastic PDE on Metric Graphs, Seminar on Stochastic Processes, University of Arizona, April 2023.
 
 * On Extinction Probability of Stochastic FKPP on Metric Graphs, Seminar on Stochastic Processes, Lehigh University, April 2022.
+
+
 ### Professional Activities
 * **Organizer**, Graduate Probability Seminar at Indiana University Bloomington,  Fall 2023 - Spring 2024
+
 ### Teaching Experience
+
 #### Mentoring, Indiana University, Bloomington
 * Co-mentored an undergraduate woman for ”Emerging Scholars Research Experience for Undergraduate Women,” a year-long program at IU (August 2022 - May 2023).
 * Co-mentored an undergraduate student for the Summer REU at Indiana University Bloomington (Summer 2023).
+
 #### Recitation/Assisting, Indiana University, Bloomington
 * Math-M 106: The Mathematics of Decisions and Beauty (Fall 2023)
 * MATH–M 211: Calculus I (Spring 2022)
