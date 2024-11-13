@@ -8,8 +8,7 @@ main:
   - title: "Publications and Projects"
     url: /research/
 
-  - title: "Research Statement"
-    url: /files/RS_Johnny.pdf    
+  
 
   #- title: "Teaching"
   #  url: /teaching/    
@@ -23,5 +22,7 @@ main:
   - title: "Curriculum Vitae"
     url: /cv/
     
+  - title: "Research Statement"
+    url: /files/RS_Johnny.pdf  
 #  - title: "Guide"
 #    url: /markdown/

@@ -9,24 +9,20 @@ author_profile: true
 I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations (SPDEs), interacting particle systems, stochastic quantizations and stochastic modeling in biological systems.
 
 
-[# Collaborators]: #
-[* [Louis (Wai-Tong)](https://sites.google.com/site/louisfanmath/home) Fan (Indiana University-Bloomington).]: #
-[* [Zhenyao Sun](https://zhenyao-sun.github.io/) (Beijing Institute of Technology).]: #
-[* [Adrian Gonzalez Casanova](https://search.asu.edu/profile/5115356) (Arizona State University).]: #
-[* [John Yin](https://yinlab.discovery.wisc.edu/john-yin/) (University of Wisconsin-Madison)]: #
 
 # Current Projects
 
 ## Stochastic PDEs
 
-1. **On Stochastic PDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun.
-
+1. **SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun.
+    * Click [Here] to see details.
+    
 2. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
     * Click [Here] to see details.
 
 
 3. **Universality of stochastic FKPP and its extinction probability**, with Louis Fan and Adrian Gonzalez Casanova.
-    * Clock [Here] to see details.
+    * Click [Here] to see details.
 
 
 
