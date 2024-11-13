@@ -39,3 +39,11 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+/* Custom font styling for publication titles */
+.archive__item-title {
+    font-family: "Georgia", serif; /* Replace with your desired font */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: normal; /* You can adjust to bold, light, etc. */
+    color: #333; /* Adjust color if needed */
+}
