@@ -47,3 +47,13 @@
     font-weight: normal; /* You can adjust to bold, light, etc. */
     color: #333; /* Adjust color if needed */
 }
+
+/* Custom CSS for bullets in CV items */
+.cv-item {
+    list-style-type: disc;
+    margin-left: 1.5em; /* Adjust indentation for bullets */
+  }
+  
+  .cv-item p {
+    display: list-item;
+  }

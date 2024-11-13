@@ -30,9 +30,4 @@
   {% if post.slidesurl %}
     <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
   {% endif %}
-
-  <!-- Optional: Display excerpt if needed -->
-  {% if post.excerpt %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-  {% endif %}
 </div>
