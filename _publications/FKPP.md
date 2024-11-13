@@ -4,7 +4,7 @@ collection: publications
 category: manuscripts
 permalink: JohnnYang007/JohnnYang007.github.io/_publications/FKPP.md
 excerpt: 'n this work, we proved an SPDE equivalent of Kingman’s universality result. In addition, we found an explicit formula for the extinction probability of solutions to the stochastic FKPP equation and the invariant measure of branching-coalescing Brownian motion on metric graphs.'
-date: 2024+
+date: 2024-11-15
 venue: #'Journal 1'
 slidesurl: #'http://academicpages.github.io/files/slides3.pdf'
 paperurl: #'http://academicpages.github.io/files/paper3.pdf'
