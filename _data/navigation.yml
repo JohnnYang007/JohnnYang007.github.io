@@ -8,8 +8,8 @@ main:
   - title: "Publications and Projects"
     url: /research/
 
-#  - title: "Talks"
-#    url: /talks/    
+  - title: "Research Statement"
+    url: /files/RS_Johnny.pdf    
 
   #- title: "Teaching"
   #  url: /teaching/    
