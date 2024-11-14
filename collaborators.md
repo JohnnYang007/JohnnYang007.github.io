@@ -1,6 +1,5 @@
-
 ---
-layout: page
+layout: archive
 title: "A list of my collaborators"
 permalink: /collaborators/
 ---
