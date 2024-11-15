@@ -14,8 +14,8 @@ You can find a list of my collaborators [here](/collaborators/).
 
 ### Stochastic PDEs
 
-1. **SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun.
-    * Click [Here] to see details.
+1. (Preprint) **Two contrasting properties of parabolic SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun. [PDF](/files/SPDE%20on%20MMS.pdf)
+    
 
 2. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
     * Click [Here] to see details.
