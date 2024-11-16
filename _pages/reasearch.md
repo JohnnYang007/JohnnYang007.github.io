@@ -19,11 +19,9 @@ You can find a list of my collaborators [here](/collaborators/).
 ### Stochastic PDEs
 
 1. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
-    * Click [Here] to see details.
 
 
 2. **Universality of stochastic FKPP and its extinction probability**, with Louis Fan and Adrian Gonzalez Casanova.
-    * Click [Here] to see details.
 
 
 
