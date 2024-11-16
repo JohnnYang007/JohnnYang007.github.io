@@ -10,18 +10,19 @@ I am interested in probability theory and its applications to physics and biolog
 
 You can find a list of my collaborators [here](/collaborators/).
 
+## Preprint(s)
+
+1. (Preprint) **Two contrasting properties of parabolic SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun. [PDF](/files/SPDE%20on%20MMS.pdf)
+
 ## Current Projects
 
 ### Stochastic PDEs
 
-1. (Preprint) **Two contrasting properties of parabolic SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun. [PDF](/files/SPDE%20on%20MMS.pdf)
-    
-
-2. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
+1. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
     * Click [Here] to see details.
 
 
-3. **Universality of stochastic FKPP and its extinction probability**, with Louis Fan and Adrian Gonzalez Casanova.
+2. **Universality of stochastic FKPP and its extinction probability**, with Louis Fan and Adrian Gonzalez Casanova.
     * Click [Here] to see details.
 
 
