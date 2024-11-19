@@ -11,7 +11,7 @@ I am a sixth year graduate student in mathematics at Indiana University - Bloomi
 
 During my graduate studies, I specialized in stochastic partial differential equations (SPDEs), interacting particle systems, and stochastic modeling. My current research interests focus on SPDEs on metric measure spaces, interacting particle systems, stochastic quantization, and applications in mathematical biology.
 
-Hobbies:  gym,  the **Godfather**.
+Hobbies:  gym,  the *Godfather*.
 
 
 
