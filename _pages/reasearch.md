@@ -21,7 +21,7 @@ You can find a list of my collaborators [here](/collaborators/).
 1. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
 
 
-2. **Universality of stochastic FKPP and its extinction probability**, with Louis Fan and Adrian Gonzalez Casanova.
+2. **Extinction probability and universality of stochastic FKPP**, with Louis Fan and Adrian Gonzalez Casanova.
 
 
 
