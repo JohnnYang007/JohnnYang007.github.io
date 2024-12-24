@@ -12,7 +12,7 @@ You can find a list of my collaborators [here](/collaborators/).
 
 ## Preprint(s)
 
-1. (Preprint) **Two contrasting properties of parabolic SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun. [PDF](files/SPDE on MMS.pdf)
+1. (Preprint) **Two contrasting properties of parabolic SPDEs on metric measure spaces**, with Louis Fan and Zhenyao Sun. [PDF](JohnnYang007/JohnnYang007.github.io/files/SPDE on MMS.pdf)
 
 ## Current Projects
 
