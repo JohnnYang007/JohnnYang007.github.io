@@ -57,6 +57,10 @@ Under the guidance of Prof. Tom Kennedy
 ## Presentations
 
 ### Talks
+* SPDEs on spatial dimensions d ∈ [1, 2 + ε), Probability Seminar, Arizona State University, February 2025.
+
+* Spatial stochastic modeling for population dynamics, Population Genetics Seminar, University of Chicago, February 2025.
+
 * Patch formation driven by stochastic effects, SIAM Conference on Mathematics of Data Science (MDS24), October 2024.
 
 * Stability of Markov Process and Foster-Lyapunov Type Criteria Demonstration via Togashi-Kaneko Model, Graduate Probability Seminar, Indiana University Bloomington, September 2023.
