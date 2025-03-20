@@ -33,8 +33,8 @@ systems, stochastic quantization, mathematical biology.
 
 ## Publications and Work in Progress
 
-1. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2024.
-2. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2024+
+1. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2025.
+2. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2025+
 3. [In preparation] On extinction of solutions to stochastic partial differential equations on metric graphs. Louis Fan, Adri´an Gonz´alez Casanova, and Johnny Yang.  2024+
 4. Qiantong Liang, Johnny Yang, Wai-Tong Louis Fan, and Wing-Cheong Lo. Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles. PLOS Computational Biology, 19(10), 2023
 5. Wai-Tong Louis Fan, Yifan Johnny Yang, and Chaojie Yuan. Constrained langevin approximation for the togashikaneko model of autocatalytic reactions. Mathematical Biosciences and Engineering, 20(3):4322–4352, 2023
@@ -57,6 +57,8 @@ Under the guidance of Prof. Tom Kennedy
 ## Presentations
 
 ### Talks
+* SPDEs on spatial dimensions $d \in [1,2+\epsilon)$, Analysis Seminar, University of Illinois Chicago, March 2025.
+
 * SPDEs on spatial dimensions d ∈ [1, 2 + ε), Probability Seminar, Arizona State University, February 2025.
 
 * Spatial stochastic modeling for population dynamics, Population Genetics Seminar, University of Chicago, February 2025.
@@ -68,6 +70,9 @@ Under the guidance of Prof. Tom Kennedy
 * On Extinction Probability of Stochastic PDE on Metric Graphs, Graduate Student Probability Conference, University of Wisconsin–Madison, September 2022. 
 
 ### Poster Presentations
+
+* SPDEs on metric measure spaces, Seminar on Stochastic Processes, Indiana University Bloomington, March 2025.
+
 * SPDE on metric measure spaces, Recent Progress in Stochastic Analysis and its Applications, Loyola University Chicago, July 2024.
 
 * On Extinction Probability of Stochastic PDE on Metric Graphs, Seminar on Stochastic Processes, University of Arizona, April 2023.
