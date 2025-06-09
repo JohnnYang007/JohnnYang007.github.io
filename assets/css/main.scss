@@ -1,0 +1,59 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+/* Custom font styling for publication titles */
+.archive__item-title {
+    font-family: "Georgia", serif; /* Replace with your desired font */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: normal; /* You can adjust to bold, light, etc. */
+    color: #333; /* Adjust color if needed */
+}
+
+/* Custom CSS for bullets in CV items */
+.cv-item {
+    list-style-type: disc;
+    margin-left: 1.5em; /* Adjust indentation for bullets */
+  }
+  
+  .cv-item p {
+    display: list-item;
+  }
