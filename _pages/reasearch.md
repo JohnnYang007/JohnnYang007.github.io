@@ -18,10 +18,13 @@ You can find a list of my collaborators [here](/collaborators/).
 
 ### Stochastic PDEs
 
-1. **Singular SPDEs on metric measure spaces**, with Hongyi Chen.
+1. **Wick Renormalized Parabolic Stochastic Quantization on Rough
+Metric Measure Spaces**, with Hongyi Chen.
 
 
 2. **Extinction probability and universality of stochastic FKPP**, with Louis Fan and Adrian Gonzalez Casanova.
+
+3. **Scaling limits of spatial population genetic models in one dimensional space**, with Adrian Gozalez Casanova.
 
 
 
