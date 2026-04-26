@@ -6,9 +6,8 @@ author_profile: true
 ---
 
 ## Research Interests
-I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations (SPDEs), interacting particle systems, stochastic quantizations and stochastic modeling in biological systems. You can find my research statement [here](/files/RS_Johnny.pdf).
+I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic partial differential equations (SPDEs), interacting particle systems, stochastic quantizations and stochastic modeling in biological systems. 
 
-You can find a list of my collaborators [here](/collaborators/).
 
 ## Preprint(s)
 
