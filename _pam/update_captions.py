@@ -16,7 +16,8 @@ DATA_PATTERN = r'<script type="application/json" id="sg-trajectory">(.*?)</scrip
 
 def update(page: Path, copy_path: Path):
     copy = json.loads(copy_path.read_text(encoding='utf-8'))
-    required = ['title', 'page_description', 'model_caption',
+    required = ['title', 'page_description', 'model_caption', 'reading_caption',
+                'method_heading', 'method_note', 'numerical_accuracy_note',
                 'equation_mathml', 'equation_accessible_text']
     if any(not isinstance(copy.get(key), str) for key in required):
         raise ValueError('Each copy.json field must be present and contain a string.')
@@ -53,7 +54,13 @@ def update(page: Path, copy_path: Path):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--page', type=Path, default=HERE.parent/'simulations'/'pam.html')
-    parser.add_argument('--copy', type=Path, default=HERE/'copy.json')
+    parser.add_argument('--page', type=Path)
+    parser.add_argument('--copy', type=Path)
     args = parser.parse_args()
-    update(args.page, args.copy)
+    if (args.page is None) != (args.copy is None):
+        parser.error('--page and --copy must be supplied together')
+    if args.page is not None:
+        update(args.page, args.copy)
+    else:
+        update(HERE.parent/'simulations'/'pam-delta.html', HERE/'copy.json')
+        update(HERE.parent/'simulations'/'pam-hat.html', HERE/'copy-hat.json')

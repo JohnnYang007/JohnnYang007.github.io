@@ -1,7 +1,11 @@
 {
   "title": "Parabolic Anderson Model on Sierpinski Gasket",
-  "page_description": "Interactive parabolic Anderson model simulation on the Sierpinski gasket.",
-  "model_caption": "One realization of the Itô parabolic Anderson model with Neumann boundary conditions. The initial condition places one unit of mass at x₀.",
+  "page_description": "Interactive level-8 parabolic Anderson model on the Sierpinski gasket with unit point-mass initial data.",
+  "model_caption": "One realization of the Itô parabolic Anderson model with Neumann boundary conditions and space–time white noise. The initial condition is a unit point mass at x₀, represented by mass concentrated at one graph vertex.",
+  "reading_caption": "Positivity: every saved positive-time snapshot is positive at all 9,843 graph vertices, including points outside the initial support. The ln u view reveals very small positive values; switch to u to inspect spatial peaks. This is a numerical illustration of strict positivity, not a proof for the continuum SPDE.",
+  "method_heading": "Numerical method and interpretation",
+  "numerical_accuracy_note": "Time-step sensitivity: comparing Δt with 2Δt gives a 22.4% relative weighted L² difference at the final time, or 4.1% after normalizing each profile by its total mass. The normalized difference reaches 15.9% over saved times. This path is a qualitative illustration; absolute amplitudes and individual peak locations remain sensitive to time resolution.",
+  "method_note": "At time zero, 1 vertex is positive and 9,842 are exactly zero. The initial peak comes from the point-mass data. At the earliest internal steps, floating-point underflow produces zero values far from the source; all saved positive-time snapshots are positive. Exact zeros have ln u = −∞ and are not assigned a finite logarithmic height or color. Positive values have no display floor. Both choices use the same driving noise, with only the initial condition changed. Peak / mean is max(u) / ∫u dμ; spatial concentration in these paths does not establish ensemble moment intermittency. The noise is white relative to dt μ(dx), with μ the normalized Hausdorff measure. The scheme preserves positivity in exact arithmetic; very small early tails are not quantitatively certified, and floating-point zeros should not be read as a propagation delay.",
   "equation_mathml": "<math display=\"block\"><mrow><msub><mi>∂</mi><mi>t</mi></msub><mi>u</mi><mo>=</mo><mi>κ</mi><msub><mi>Δ</mi><mtext>SG,N</mtext></msub><mi>u</mi><mo>+</mo><mi>λ</mi><mi>u</mi><mover><mi>W</mi><mo>˙</mo></mover></mrow></math>",
   "equation_accessible_text": "The time derivative of u equals kappa times the Neumann gasket Laplacian of u plus lambda times u times space-time white noise."
 }
