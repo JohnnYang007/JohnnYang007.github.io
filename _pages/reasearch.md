@@ -9,13 +9,13 @@ author_profile: true
 I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic PDEs, interacting particle systems, stochastic quantizations, stochastic modeling, Dirichlet forms.
 
 ## Work in Progress
-1. **Dormancy stabilizes non-transitive competitive dynamics**, with José Chacón, Adrián González-Casanova, Imanol Nuñez, José Luis Pérez, and Rafael Peña-Miller. *arXiv:2608.17179* ([arXiv](https://arxiv.org/abs/2608.17179)).
-2. **Scaling limit of spatial population genetic models on one dimensional spaces**, with Adrián González Casanova. *(In preparation)*
-3. **Spatial modeling for virus infection with multiple stages**, with Louis Fan and John Yin. *(In preparation)*
-4. **Universality of stochastic FKPP equation**, with Louis Fan and Adrián González Casanova. *(In preparation)*
+1. **Scaling limit of spatial population genetic models on one dimensional spaces**, with Adrián González Casanova. *(In preparation)*
+2. **Spatial modeling for virus infection with multiple stages**, with Louis Fan and John Yin. *(In preparation)*
+3. **Universality of stochastic FKPP equation**, with Louis Fan and Adrián González Casanova. *(In preparation)*
 
 ## Publications and Preprints
-1. [(arXiv Link)](https://arxiv.org/abs/2605.05442)**Wick renormalized parabolic stochastic quantization equations on rough metric measure spaces**, with Hongyi Chen. 
-2. **Strong comparison principle for stochastic partial differential equations on metric measure spaces**, with Louis Fan and Zhenyao Sun. Preprint, 2024. [PDF](https://johnnyang007.github.io/files/SPDE on MMS.pdf)
-3. [(Link)](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011513) **Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles**, with Qiantong Liang, Wai-Tong Louis Fan, and Wing-Cheong Lo. *PLoS Computational Biology* 19, no. 10 (2023): e1011513.
-4. [(Link)](https://www.aimspress.com/article/doi/10.3934/mbe.2023201) **Constrained Langevin approximation for the Togashi-Kaneko model of autocatalytic reactions**, with Wai-Tong Louis Fan and Chaojie Yuan. *Mathematical Biosciences and Engineering* 20, no. 3 (2023): 4322–4352.
+1. **Wick renormalized parabolic stochastic quantization equations on rough metric measure spaces**, with Hongyi Chen. [arXiv:2605.05442](https://arxiv.org/abs/2605.05442).
+2. **Dormancy stabilizes non-transitive competitive dynamics**, with José Chacón, Adrián González-Casanova, Imanol Nuñez, Rafael Peña-Miller, and José Luis Pérez. [arXiv:2608.17179](https://arxiv.org/abs/2608.17179).
+3. **Strong comparison principle for stochastic partial differential equations on metric measure spaces**, with Louis Fan and Zhenyao Sun. Preprint, 2024. [PDF](https://johnnyang007.github.io/files/SPDE on MMS.pdf).
+4. **Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles**, with Qiantong Liang, Wai-Tong Louis Fan, and Wing-Cheong Lo. *PLoS Computational Biology* 19, no. 10 (2023): e1011513. [Article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011513).
+5. **Constrained Langevin approximation for the Togashi-Kaneko model of autocatalytic reactions**, with Wai-Tong Louis Fan and Chaojie Yuan. *Mathematical Biosciences and Engineering* 20, no. 3 (2023): 4322–4352. [Article](https://www.aimspress.com/article/doi/10.3934/mbe.2023201).
