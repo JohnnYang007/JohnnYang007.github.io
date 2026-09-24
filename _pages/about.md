@@ -10,6 +10,8 @@ redirect_from:
 I am a Postdoctoral Research Scholars in School of Mathematics and Statistical Sciences at Arizona State Univeristy. In 2025, I earned my PhD at Indiana University - Bloomington, supervised by Prof. [Louis (Wai-Tong) Fan](https://sites.google.com/site/louisfanmath/home). I am interested in probability and analysis, in particular stochastic PDEs, Dirichlet forms and  interacting particle systems.
 
 
+<p><a href="{{ '/simulations/pam.html' | relative_url }}" target="_blank" rel="noopener">Parabolic Anderson Model on Sierpinski Gasket</a></p>
+
 Hobbies:  gym,  the *Godfather*.
 
 
