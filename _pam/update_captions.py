@@ -17,7 +17,6 @@ DATA_PATTERN = r'<script type="application/json" id="sg-trajectory">(.*?)</scrip
 def update(page: Path, copy_path: Path):
     copy = json.loads(copy_path.read_text(encoding='utf-8'))
     required = ['title', 'page_description', 'model_caption', 'reading_caption',
-                'method_heading', 'method_note', 'numerical_accuracy_note',
                 'equation_mathml', 'equation_accessible_text']
     if any(not isinstance(copy.get(key), str) for key in required):
         raise ValueError('Each copy.json field must be present and contain a string.')

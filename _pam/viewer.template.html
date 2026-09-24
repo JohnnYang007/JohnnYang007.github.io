@@ -24,12 +24,11 @@
       <div class="sg-legend"><span id="sg-legend-title" class="text-small">u</span><canvas id="sg-colorbar" role="img" aria-label="Solution color scale"></canvas></div>
     </section>
   </div>
-  <div class="viz-row text-small tabular-nums sg-stats"><span id="sg-min"></span><span id="sg-max"></span><span id="sg-mass"></span><span id="sg-ratio"></span><span id="sg-positive"></span></div>
+  <div class="viz-row text-small tabular-nums sg-stats"><span id="sg-min"></span><span id="sg-max"></span><span id="sg-mass"></span><span id="sg-ratio"></span></div>
   <div class="text-small" id="sg-zero-note" hidden></div>
   <div class="text-small sg-detail" id="sg-detail" aria-live="polite">No vertex selected</div>
   <p class="text-small sg-caption" id="sg-caption-model"></p>
   <p class="text-small sg-caption" id="sg-caption-reading"></p>
-  <details class="sg-method text-small"><summary id="sg-method-heading">Numerical method and interpretation</summary><p id="sg-method-copy"></p><p id="sg-accuracy-note"></p><p id="sg-method-note"></p><p>Related theory: <a href="https://arxiv.org/abs/1709.00916" target="_blank" rel="noopener noreferrer">Hambly and Yang, parabolic SPDEs on p.c.f. fractals</a>.</p></details>
   <div class="sr-only" id="sg-announcement" aria-live="polite"></div>
   <script type="application/json" id="sg-trajectory">__SG_TRAJECTORY__</script>
   <script type="application/json" id="sg-copy">__SG_COPY__</script>
@@ -41,8 +40,6 @@
   #sg-pam-view .sg-equation { margin:14px 0; }
   #sg-pam-view .sg-equation math { color:var(--foreground); }
   #sg-pam-view .sg-caption { margin:12px 0 0; }
-  #sg-pam-view .sg-method { margin-top:14px; }
-  #sg-pam-view .sg-method summary { color:var(--foreground); }
   #sg-pam-view .sg-toolbar { margin:16px 0 12px; }
   #sg-pam-view .sg-time-heading, #sg-pam-view .sg-panel-heading { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
   #sg-pam-view .sg-panels { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:20px; margin-top:10px; }
@@ -91,13 +88,9 @@ __SG_DECODER__
   byId('sg-title').textContent=C.title;
   byId('sg-caption-model').textContent=C.model_caption;
   byId('sg-caption-reading').textContent=C.reading_caption;
-  byId('sg-method-heading').textContent=C.method_heading;
-  byId('sg-method-note').textContent=C.method_note;
-  byId('sg-accuracy-note').textContent=C.numerical_accuracy_note||'';
   if(C.equation_mathml)byId('sg-equation').innerHTML=C.equation_mathml;
   if(C.equation_accessible_text)byId('sg-equation').setAttribute('aria-label',C.equation_accessible_text);
-  byId('sg-meta').textContent=`Neumann · ${p.initial_label||(isDelta?'unit point-mass initial data':'u₀ = 1')} · level ${p.level} · ${N.toLocaleString()} vertices · κ = ${p.kappa} · λ = ${p.lambda} · seed ${p.seed}`;
-  byId('sg-method-copy').textContent=`Level-${p.level} mass-lumped graph approximation with ${N.toLocaleString()} vertices and ${D.triangles.length.toLocaleString()} retained cells. Each step applies the exact scalar Itô noise flow, followed by implicit diffusion. Time step: ${p.dt.toExponential(1)}. Displayed snapshots: ${D.frames.length} of ${D.display_encoding.original_saved_frame_count}. Zero locations and source values are preserved exactly; reported extrema and total mass use the original data. Other displayed vertex values have less than ${(100*D.display_encoding.relative_error_bound).toFixed(2)}% relative encoding error.`;
+  byId('sg-meta').textContent=`Neumann · ${p.initial_label||(isDelta?'unit point-mass initial data':'u₀ = 1')} · κ = ${p.kappa} · λ = ${p.lambda}`;
   if(p.frame_schedule==='quadratic')byId('sg-time-heading-label').textContent='Time · early evolution slowed down';
 
   function restore(saved) {
@@ -194,7 +187,7 @@ __SG_DECODER__
     text(ctx,state.log?'ln u':'u',top.x,top.y-17);
     if(state.log&&positiveCount<N)projected.forEach((q,i)=>{if(!q)return;ctx.beginPath();ctx.arc(q.x,q.y,2,0,2*Math.PI);ctx.fillStyle=color(norm(u[i]));ctx.fill();});
     if(state.selected!==null&&projected[state.selected]){const q=projected[state.selected];ctx.beginPath();ctx.arc(q.x,q.y,4,0,Math.PI*2);ctx.strokeStyle=colors.fg;ctx.lineWidth=1.5;ctx.stroke();}
-    surface.setAttribute('aria-label',`${state.log?'Natural logarithm of solution':'Solution'} height at time ${D.times[state.frame].toFixed(5)}; ${positiveCount} of ${N} vertices are positive; zero values have no finite logarithmic height.`);
+    surface.setAttribute('aria-label',`${state.log?'Natural logarithm of solution':'Solution'} height at time ${D.times[state.frame].toFixed(5)}; zero values have no finite logarithmic height.`);
   }
   function drawBar() {
     const {ctx,w,h}=setup(bar),start=20,end=w-20;
@@ -202,9 +195,9 @@ __SG_DECODER__
     [0,.5,1].forEach(t=>{const x=start+t*(end-start),v=state.log?lowLog+t*(highLog-lowLog):t*maxLinear;const label=state.log?v.toFixed(1):fmt(v);text(ctx,label,x,27,t===0?'left':t===1?'right':'center');});
   }
   function detail() {
-    if(state.selected===null){byId('sg-detail').textContent='Select a vertex in the plan view to follow its solution value.';return;}
+    if(state.selected===null){byId('sg-detail').textContent='Select a point in the plan view to follow its solution value.';return;}
     const i=state.selected,[x,y]=D.coords[i],u=D.frames[state.frame][i];
-    const label=i===sourceIndex?(isDelta?'Initial point mass x₀':'Hat center x₀'):D.frames[0][i]===0?'Initially zero vertex '+i:'Vertex '+i;
+    const label=i===sourceIndex?(isDelta?'Initial point mass x₀':'Hat center x₀'):D.frames[0][i]===0?'Initially zero point':'Selected point';
     byId('sg-detail').textContent=`${label} · x = (${x.toFixed(3)}, ${y.toFixed(3)}) · u ${i===sourceIndex?'=':'≈'} ${fmt(u)} · ln u ${u>0?(i===sourceIndex?'=':'≈')+' '+Math.log(u).toFixed(3):'= −∞'}`;
   }
   function draw() {
@@ -226,9 +219,8 @@ __SG_DECODER__
     byId('sg-max').textContent=`max u = ${fmt(D.maxima[state.frame])}`;
     byId('sg-mass').textContent=`∫ u dμ = ${fmt(D.masses[state.frame])}`;
     byId('sg-ratio').textContent=`Peak / mean = ${fmt(D.maxima[state.frame]/D.masses[state.frame])}`;
-    byId('sg-positive').textContent=`Positive vertices: ${positiveCount.toLocaleString()} / ${N.toLocaleString()}`;
     byId('sg-zero-note').hidden=!(state.log&&positiveCount<N);
-    byId('sg-zero-note').textContent=`u = 0 at ${(N-positiveCount).toLocaleString()} vertices: ln u = −∞ (no finite height or color).`;
+    byId('sg-zero-note').textContent=`Where u = 0, ln u = −∞ (no finite height or color).`;
     drawSurface(u);drawMap(u);drawBar();
     detail();
     root.dataset.frame=String(state.frame);root.dataset.scale=state.log?'ln':'linear';

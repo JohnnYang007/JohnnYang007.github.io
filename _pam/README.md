@@ -3,7 +3,7 @@
 The entry page is `simulations/pam.html`. Its **Initial condition** selector loads
 `pam-delta.html` (the preserved point-mass trajectory) or `pam-hat.html` (the
 localized continuous harmonic-hat trajectory). Both offer natural-log and linear
-views. The Researches page embeds this selector with `_includes/pam-simulation.html`.
+views. The Researches page links to this standalone page using `_includes/pam-simulation.html`; it does not embed or load the simulation.
 
 Share direct choices using `simulations/pam.html?initial=delta` or
 `simulations/pam.html?initial=hat`. Visitors load saved data; GitHub Pages does not
@@ -15,7 +15,7 @@ run simulations. Both initial conditions use the same driving noise.
 2. From the repository root, run `python3 _pam/update_captions.py`.
 3. Commit the changed copy files and generated `simulations/pam-*.html`, then push.
 
-Titles, captions, descriptions, equations, and expandable method notes are editable.
+Titles, captions, descriptions, and equations are editable.
 This standard-library-only script updates both pages, verifying that each embedded
 simulation payload is byte-for-byte unchanged. It does not run Julia, read NPZ
 files, or recompress arrays. To update just one page, supply both
@@ -24,7 +24,7 @@ files, or recompress arrays. To update just one page, supply both
 The initial profile, coefficients, and trajectory are fixed numerical data.
 Changing descriptive wording does not change the simulation. Retain the distinction
 between numerical positivity at graph vertices and a theorem for the continuum
-SPDE. Each choice has its own time-step sensitivity figures in the method notes.
+SPDE. Detailed numerical checks remain in the local simulation project and are not displayed on the public pages.
 A single path illustrates spatial concentration, not moment intermittency.
 
 ## Presentation sources

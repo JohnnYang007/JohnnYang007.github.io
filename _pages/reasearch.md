@@ -22,6 +22,4 @@ I am interested in probability theory and its applications to physics and biolog
 
 <h2 id="interactive-simulation">Interactive simulation</h2>
 
-Explore the parabolic Anderson model on the Sierpinski gasket, starting from a point mass or a localized continuous profile. The saved solutions illustrate positivity beyond the initial support and spatial concentration under the same driving noise.
-
 {% include pam-simulation.html %}
