@@ -9,7 +9,7 @@ author_profile: true
 I am interested in probability theory and its applications to physics and biology. My research focuses on stochastic PDEs, interacting particle systems, stochastic quantizations, stochastic modeling, Dirichlet forms.
 
 ## Work in Progress
-1. **Evolutionary games with memory: the effect of dormancy on complex interactions**, with José Chacón, Adrián González Casanova, Imanol Nuñez, and José Luis Pérez. *(In preparation)*
+1. **Dormancy stabilizes non-transitive competitive dynamics**, with José Chacón, Adrián González-Casanova, Imanol Nuñez, José Luis Pérez, and Rafael Peña-Miller. *arXiv:2608.17179* ([arXiv](https://arxiv.org/abs/2608.17179)).
 2. **Scaling limit of spatial population genetic models on one dimensional spaces**, with Adrián González Casanova. *(In preparation)*
 3. **Spatial modeling for virus infection with multiple stages**, with Louis Fan and John Yin. *(In preparation)*
 4. **Universality of stochastic FKPP equation**, with Louis Fan and Adrián González Casanova. *(In preparation)*
