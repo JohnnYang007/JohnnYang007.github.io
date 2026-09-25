@@ -1,0 +1,8 @@
+{
+  "title": "Parabolic Anderson Model on Sierpinski Gasket: Mild Noise",
+  "page_description": "Interactive parabolic Anderson model on the Sierpinski gasket with a localized harmonic-hat initial profile and mild noise.",
+  "model_caption": "One realization of the Itô parabolic Anderson model with Neumann boundary conditions and space–time white noise. The initial condition is the same nonnegative harmonic hat of total mass one used in the stronger-noise view, with noise strength λ = 0.5.",
+  "reading_caption": "Compare this view with the λ = 2.5 harmonic-hat view on the main simulation page. Use ln u to reveal small positive values beyond the initial support, or u to inspect peaks. Heights and colors rescale at each time; the mass and maximum labels retain the absolute values.",
+  "equation_mathml": "<math display=\"block\"><mrow><msub><mi>∂</mi><mi>t</mi></msub><mi>u</mi><mo>=</mo><mi>κ</mi><msub><mi>Δ</mi><mtext>SG,N</mtext></msub><mi>u</mi><mo>+</mo><mi>λ</mi><mi>u</mi><mover><mi>W</mi><mo>˙</mo></mover></mrow></math>",
+  "equation_accessible_text": "The time derivative of u equals kappa times the Neumann gasket Laplacian of u plus lambda times u times space-time white noise."
+}

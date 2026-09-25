@@ -63,3 +63,4 @@ if __name__ == '__main__':
     else:
         update(HERE.parent/'simulations'/'pam-delta.html', HERE/'copy.json')
         update(HERE.parent/'simulations'/'pam-hat.html', HERE/'copy-hat.json')
+        update(HERE.parent/'simulations'/'pam-hat-low.html', HERE/'copy-hat-low.json')

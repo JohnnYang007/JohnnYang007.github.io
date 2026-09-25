@@ -1,25 +1,29 @@
 # Editing the PAM visualization
 
-The entry page is `simulations/pam.html`. Its **Initial condition** selector loads
-`pam-delta.html` (the preserved point-mass trajectory) or `pam-hat.html` (the
-localized continuous harmonic-hat trajectory). Both offer natural-log and linear
-views. The Researches page links to this standalone page using `_includes/pam-simulation.html`; it does not embed or load the simulation.
+The entry page is `simulations/pam.html`. Its **Initial condition and noise
+strength** selector loads `pam-delta.html` (point mass, λ = 2.5),
+`pam-hat.html` (harmonic hat, λ = 2.5), or `pam-hat-low.html` (the same hat and
+Brownian increments, λ = 0.5). All three offer natural-log and linear views.
+The Researches page links to this standalone page using
+`_includes/pam-simulation.html`; it does not embed or load the simulation.
 
-Share direct choices using `simulations/pam.html?initial=delta` or
-`simulations/pam.html?initial=hat`. Visitors load saved data; GitHub Pages does not
-run simulations. Both initial conditions use the same driving noise.
+Share direct choices using `simulations/pam.html?initial=delta`,
+`simulations/pam.html?initial=hat`, or
+`simulations/pam.html?initial=hat-low`. Visitors load saved data; GitHub Pages
+does not run simulations. All three use the same Brownian increments.
 
 ## Edit descriptions without rerunning
 
-1. Edit `_pam/copy.json` for delta or `_pam/copy-hat.json` for the localized profile.
+1. Edit `_pam/copy.json` for delta, `_pam/copy-hat.json` for the strong-noise hat,
+   or `_pam/copy-hat-low.json` for the mild-noise hat.
 2. From the repository root, run `python3 _pam/update_captions.py`.
 3. Commit the changed copy files and generated `simulations/pam-*.html`, then push.
 
 Titles, captions, descriptions, and equations are editable.
-This standard-library-only script updates both pages, verifying that each embedded
+This standard-library-only script updates all three pages, verifying that each embedded
 simulation payload is byte-for-byte unchanged. It does not run Julia, read NPZ
 files, or recompress arrays. To update just one page, supply both
-`--page simulations/pam-hat.html --copy _pam/copy-hat.json` (or the delta pair).
+`--page simulations/pam-hat.html --copy _pam/copy-hat.json` (or either other pair).
 
 The initial profile, coefficients, and trajectory are fixed numerical data.
 Changing descriptive wording does not change the simulation. Retain the distinction

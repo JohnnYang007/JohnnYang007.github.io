@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
-  <meta name="description" content="Explore the parabolic Anderson model on the Sierpiński gasket from a point mass or a localized continuous initial profile.">
+  <meta name="description" content="Explore the parabolic Anderson model on the Sierpiński gasket with two initial conditions and two noise strengths.">
   <title>Parabolic Anderson model on the Sierpiński gasket</title>
   <style>
     :root{color-scheme:light dark;--page:#fff;--ink:#242424;--muted:#626262;--line:#d7d7d7;--accent:#2458ad}
@@ -28,23 +28,25 @@
 <body>
   <div class="initial-controls">
     <div class="initial-field">
-      <label for="pam-initial">Initial condition</label>
+      <label for="pam-initial">Initial condition and noise strength</label>
       <select id="pam-initial" aria-controls="pam-selected-view">
-        <option value="delta" selected>Delta point mass</option>
-        <option value="hat">Localized continuous profile</option>
+        <option value="delta" selected>Delta point mass · λ = 2.5</option>
+        <option value="hat">Localized profile · λ = 2.5</option>
+        <option value="hat-low">Localized profile · λ = 0.5</option>
       </select>
     </div>
     <a id="pam-direct-link" class="direct-link" href="./pam-delta.html" target="_blank" rel="noopener noreferrer">Open selected view in a separate page</a>
   </div>
   <p id="initial-status" role="status" aria-live="polite"></p>
-  <iframe id="pam-selected-view" title="Parabolic Anderson model: Delta point mass"></iframe>
-  <noscript><p>JavaScript is needed for the interactive selector. Open the <a href="./pam-delta.html">point-mass view</a> or the <a href="./pam-hat.html">localized-profile view</a> directly.</p></noscript>
+  <iframe id="pam-selected-view" title="Parabolic Anderson model: Delta point mass, λ = 2.5"></iframe>
+  <noscript><p>JavaScript is needed for the interactive selector. Open the <a href="./pam-delta.html">point-mass view</a>, the <a href="./pam-hat.html">localized-profile view</a>, or the <a href="./pam-hat-low.html">mild-noise view</a> directly.</p></noscript>
   <script>
   (() => {
     'use strict';
     const views=Object.freeze({
-      delta:{file:'pam-delta.html',label:'Delta point mass'},
-      hat:{file:'pam-hat.html',label:'Localized continuous profile'}
+      delta:{file:'pam-delta.html',label:'Delta point mass, λ = 2.5'},
+      hat:{file:'pam-hat.html',label:'Localized profile, λ = 2.5'},
+      'hat-low':{file:'pam-hat-low.html',label:'Localized profile, λ = 0.5'}
     });
     const select=document.getElementById('pam-initial');
     const frame=document.getElementById('pam-selected-view');
@@ -90,7 +92,7 @@
     }
     frame.addEventListener('load',()=>{
       // Ignore an initial about:blank or a superseded navigation. The target
-      // always comes from the two-file allowlist above, never from a URL input.
+      // always comes from the three-file allowlist above, never from a URL input.
       try{
         const doc=frame.contentDocument;
         if(!doc||doc.URL!==expectedURL)return;
