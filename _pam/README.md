@@ -9,6 +9,11 @@ using `_includes/pam-simulation.html`. The overview links to the gasket selector
 and two standalone carpet views. The carpet files are saved simulations; the site
 does not run their numerical solvers.
 
+For public carpet wording, edit `_pam/copy-carpet.json` and run
+`python3 _pam/update_carpet_captions.py`. This updates the copy in both saved
+views and verifies that their embedded solution data remain byte-for-byte
+unchanged.
+
 Share direct gasket choices using `simulations/pam.html?initial=delta`,
 `simulations/pam.html?initial=hat`, or
 `simulations/pam.html?initial=hat-low`. Visitors load saved data; GitHub Pages

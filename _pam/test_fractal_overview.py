@@ -1,4 +1,5 @@
 from html.parser import HTMLParser
+import json
 from pathlib import Path
 import unittest
 
@@ -40,6 +41,23 @@ class FractalPamOverviewTests(unittest.TestCase):
         self.assertNotIn("<iframe", research.lower())
         self.assertNotIn("<iframe", include.lower())
         self.assertNotIn("/simulations/pam.html", research)
+
+    def test_both_carpet_pages_use_the_editable_public_copy(self):
+        copy_path = ROOT / "_pam" / "copy-carpet.json"
+        self.assertTrue(copy_path.is_file(), "missing editable carpet-page copy")
+        copy = json.loads(copy_path.read_text())
+        public_captions = " ".join(copy[key] for key in (
+            "model_caption", "reading_caption", "positivity_caption"))
+        self.assertNotIn("0.00055", public_captions)
+        for name in (
+            "carpet-pam-lambda1-startupframes.html",
+            "carpet-pam-low-noise-startupframes.html",
+        ):
+            html = (ROOT / "simulations" / name).read_text()
+            marker = '<script type="application/json" id="sc-copy">'
+            self.assertEqual(html.count(marker), 1)
+            embedded = html.split(marker, 1)[1].split("</script>", 1)[0]
+            self.assertEqual(json.loads(embedded), copy, f"{name} has stale public copy")
 
 
 if __name__ == "__main__":
