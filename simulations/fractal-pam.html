@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Interactive parabolic Anderson model visualizations on the Sierpiński gasket and carpet.">
+  <title>Parabolic Anderson model on two fractals</title>
+  <style>
+    :root{color-scheme:light dark;--page:#fff;--ink:#242424;--muted:#626262;--line:#d7d7d7;--accent:#2458ad;--panel:#f6f8fb}
+    @media(prefers-color-scheme:dark){:root{color-scheme:dark;--page:#181818;--ink:#ececec;--muted:#aaa;--line:#555;--accent:#a7c7ff;--panel:#22272e}}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--page);color:var(--ink)}
+    body{font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    main{max-width:860px;margin:0 auto;padding:clamp(28px,6vw,64px) 22px}
+    nav{margin-bottom:36px;font-size:.92rem}
+    a{color:var(--accent);text-underline-offset:3px}
+    a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+    .eyebrow{margin:0 0 8px;color:var(--muted);font-size:.86rem;letter-spacing:.04em;text-transform:uppercase}
+    h1{margin:0;font-size:clamp(2rem,6vw,3.15rem);line-height:1.12;letter-spacing:-.035em}
+    .intro{max-width:660px;margin:16px 0 28px;color:var(--muted);font-size:1.08rem}
+    .equation{margin:24px 0 34px;padding:15px 18px;border:1px solid var(--line);border-radius:10px;background:var(--panel);font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;text-align:center}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
+    section{padding:22px;border:1px solid var(--line);border-radius:12px;background:var(--panel)}
+    h2{margin:0 0 8px;font-size:1.3rem}
+    p{margin:8px 0 16px;color:var(--muted)}
+    .links{display:grid;gap:10px;margin:18px 0 0;padding:0;list-style:none}
+    .links a{display:block;padding:11px 14px;border:1px solid var(--line);border-radius:8px;background:var(--page);font-weight:600;text-decoration:none}
+    .links a:hover{border-color:var(--accent)}
+    .back{margin-top:30px;font-size:.92rem}
+  </style>
+</head>
+<body>
+  <main>
+    <nav aria-label="Breadcrumb"><a href="../research/">Research</a></nav>
+    <p class="eyebrow">Interactive solution visualizations</p>
+    <h1>Parabolic Anderson model on two fractals</h1>
+    <p class="intro">Explore realizations of the Itô parabolic Anderson model with space–time white noise on the Sierpiński gasket and carpet. Each view opens on its own page.</p>
+    <div class="equation" role="math" aria-label="The time derivative of u equals kappa times the Neumann Laplacian of u plus lambda times u times space-time white noise.">
+      ∂<sub>t</sub>u = κ Δ<sub>F,N</sub>u + λuẆ
+    </div>
+    <div class="grid">
+      <section aria-labelledby="gasket-heading">
+        <h2 id="gasket-heading">Sierpiński gasket</h2>
+        <p>Compare a point-mass initial condition with localized harmonic profiles at two noise strengths.</p>
+        <ul class="links">
+          <li><a href="./pam.html">Open the gasket simulations</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="carpet-heading">
+        <h2 id="carpet-heading">Sierpiński carpet</h2>
+        <p>Follow a localized bump with nontrivial support under stronger or milder noise.</p>
+        <ul class="links">
+          <li><a href="./carpet-pam-lambda1-startupframes.html">Localized bump · λ = 1</a></li>
+          <li><a href="./carpet-pam-low-noise-startupframes.html">Localized bump · λ = 0.1</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="back"><a href="../research/#interactive-simulation">Back to Research</a></p>
+  </main>
+</body>
+</html>

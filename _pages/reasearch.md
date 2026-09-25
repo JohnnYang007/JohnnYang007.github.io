@@ -20,6 +20,6 @@ I am interested in probability theory and its applications to physics and biolog
 4. **Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles**, with Qiantong Liang, Wai-Tong Louis Fan, and Wing-Cheong Lo. *PLoS Computational Biology* 19, no. 10 (2023): e1011513. [Article](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011513).
 5. **Constrained Langevin approximation for the Togashi-Kaneko model of autocatalytic reactions**, with Wai-Tong Louis Fan and Chaojie Yuan. *Mathematical Biosciences and Engineering* 20, no. 3 (2023): 4322–4352. [Article](https://www.aimspress.com/article/doi/10.3934/mbe.2023201).
 
-<h2 id="interactive-simulation">Interactive simulation</h2>
+<h2 id="interactive-simulation">Interactive simulations</h2>
 
 {% include pam-simulation.html %}

@@ -1,13 +1,15 @@
 # Editing the PAM visualization
 
-The entry page is `simulations/pam.html`. Its **Initial condition and noise
+The gasket selector is `simulations/pam.html`. Its **Initial condition and noise
 strength** selector loads `pam-delta.html` (point mass, λ = 2.5),
 `pam-hat.html` (harmonic hat, λ = 2.5), or `pam-hat-low.html` (the same hat and
 Brownian increments, λ = 0.5). All three offer natural-log and linear views.
-The Researches page links to this standalone page using
-`_includes/pam-simulation.html`; it does not embed or load the simulation.
+The Researches page links to the standalone overview `simulations/fractal-pam.html`
+using `_includes/pam-simulation.html`. The overview links to the gasket selector
+and two standalone carpet views. The carpet files are saved simulations; the site
+does not run their numerical solvers.
 
-Share direct choices using `simulations/pam.html?initial=delta`,
+Share direct gasket choices using `simulations/pam.html?initial=delta`,
 `simulations/pam.html?initial=hat`, or
 `simulations/pam.html?initial=hat-low`. Visitors load saved data; GitHub Pages
 does not run simulations. All three use the same Brownian increments.
