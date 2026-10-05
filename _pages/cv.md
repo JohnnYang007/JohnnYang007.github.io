@@ -33,11 +33,12 @@ systems, stochastic quantization, mathematical biology.
 
 ## Publications and Work in Progress
 
-1. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2025.
-2. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2025+
-3. [In preparation] On extinction of solutions to stochastic partial differential equations on metric graphs. Louis Fan, Adri´an Gonz´alez Casanova, and Johnny Yang.  2024+
-4. Qiantong Liang, Johnny Yang, Wai-Tong Louis Fan, and Wing-Cheong Lo. Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles. PLOS Computational Biology, 19(10), 2023
-5. Wai-Tong Louis Fan, Yifan Johnny Yang, and Chaojie Yuan. Constrained langevin approximation for the togashikaneko model of autocatalytic reactions. Mathematical Biosciences and Engineering, 20(3):4322–4352, 2023
+1. **From Individual-Based Models to General Stochastic Reaction Diffusion Equations**. Adrián González Casanova and Johnny (Yifan) Yang. arXiv preprint, 2026. [arXiv:2610.02669](https://arxiv.org/abs/2610.02669).
+2. \[Coming soon\] On stochastic partial differential equations on metric measure spaces.  Louis Fan, Zhenyao Sun, and Johnny Yang.  2025.
+3. [In preparation] Singular spdes on metric measure spaces: the sub-gaussian case. Hongyi Chen and Johnny Yang. 2025+
+4. [In preparation] On extinction of solutions to stochastic partial differential equations on metric graphs. Louis Fan, Adri´an Gonz´alez Casanova, and Johnny Yang.  2024+
+5. Qiantong Liang, Johnny Yang, Wai-Tong Louis Fan, and Wing-Cheong Lo. Patch formation driven by stochastic effects of interaction between viruses and defective interfering particles. PLOS Computational Biology, 19(10), 2023
+6. Wai-Tong Louis Fan, Yifan Johnny Yang, and Chaojie Yuan. Constrained langevin approximation for the togashikaneko model of autocatalytic reactions. Mathematical Biosciences and Engineering, 20(3):4322–4352, 2023
 
 ## Other Research Activities
 
