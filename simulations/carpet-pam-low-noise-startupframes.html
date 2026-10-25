@@ -368,5 +368,6 @@ async function decodeScTrajectory(P) {
   theme();draw();
 })().catch(error=>{const root=document.getElementById('sc-pam-view'),message=document.createElement('p');message.setAttribute('role','alert');message.textContent='Unable to load solution data: '+error.message;root.appendChild(message);root.dataset.error=error.message;root.setAttribute('aria-busy','false');});
 </script>
+<script defer src="../assets/js/analytics.js"></script>
 </body>
 </html>
