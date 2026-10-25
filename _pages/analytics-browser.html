@@ -1,0 +1,43 @@
+---
+layout: null
+permalink: /analytics-browser/
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Exclude this browser from analytics</title>
+  <style>body{max-width:640px;margin:60px auto;padding:0 24px;font:17px/1.6 system-ui,sans-serif;color:#242424}button{font:inherit;padding:8px 16px;cursor:pointer}a{color:#2458ad}#status{font-weight:600}</style>
+</head>
+<body>
+  <h1>Exclude this browser from analytics</h1>
+  <p>This setting excludes your own visits to Johnny's website in this browser profile. It stays active when your network or IP address changes.</p>
+  <p id="status" role="status" aria-live="polite"></p>
+  <button id="exclude" type="button">Exclude this browser</button>
+  <p>Repeat this on other browsers or devices. Clearing website data or using a private window removes the setting.</p>
+  <p><a href="/">Return to the homepage</a> · <a href="https://johnnyang-007.goatcounter.com/">Open analytics dashboard</a></p>
+  <script>
+    (function () {
+      var status = document.getElementById('status');
+      var button = document.getElementById('exclude');
+      function showStatus() {
+        try {
+          var excluded = localStorage.getItem('skipgc') === 't';
+          status.textContent = excluded ? 'This browser is excluded from analytics.' : 'This browser is not yet excluded.';
+          button.disabled = excluded;
+        } catch (_error) {
+          status.textContent = 'Browser storage is blocked. Allow storage for this website, then try again.';
+        }
+      }
+      button.addEventListener('click', function () {
+        try { localStorage.setItem('skipgc', 't'); } catch (_error) {}
+        showStatus();
+      });
+      showStatus();
+    })();
+  </script>
+</body>
+</html>

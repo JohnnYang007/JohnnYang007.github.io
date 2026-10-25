@@ -6,6 +6,13 @@
   if (!endpoint || window.location.hostname !== 'johnnyang007.github.io' || window.self !== window.top) {
     return;
   }
+  try {
+    if (window.location.hash !== '#toggle-goatcounter' && window.localStorage.getItem('skipgc') === 't') {
+      return;
+    }
+  } catch (_error) {
+    // A browser may block storage; page content must still load normally.
+  }
 
   var script = document.createElement('script');
   script.async = true;
